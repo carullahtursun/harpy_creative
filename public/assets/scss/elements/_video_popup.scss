@@ -1,0 +1,100 @@
+.video_thumbnail {
+  & img.video_bg {
+    aspect-ratio: 1 / 0.468;
+    object-fit: cover;
+  }
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  &::after {
+    content: url(../../../assets/images/hero/background/line.svg);
+  }
+  &::before {
+    content: "";
+    background-color: rgba($color: #111, $alpha: 0.6);
+    filter: blur(195px);
+  }
+
+  .video_play_button {
+    max-width: 150px;
+    max-height: 150px;
+    width: calc(11vw - 5.97px);
+    height: calc(11vw - 5.97px);
+    background: #fff;
+    cursor: pointer;
+    z-index: 1;
+    & span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 0;
+      border-left: 27px solid var(--color-primary);
+      border-top: 17px solid transparent;
+      border-bottom: 17px solid transparent;
+      @media #{$lg_layout} {
+        border-left-width: 20px;
+        border-top-width: 13px;
+        border-bottom-width: 13px;
+      }
+      @media #{$md_layout} {
+        border-left-width: 13px;
+        border-top-width: 9px;
+        border-bottom-width: 9px;
+      }
+      @media #{$sm_layout} {
+        border-left-width: 10px;
+        border-top-width: 7px;
+        border-bottom-width: 7px;
+      }
+      @media #{$small_mobile} {
+        border-left-width: 5px;
+        border-top-width: 4px;
+        border-bottom-width: 4px;
+      }
+    }
+  }
+}
+
+.video_fade {
+  &.mfp-bg {
+    opacity: 0;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    background-color: var(--color-black);
+    &.mfp-ready {
+      opacity: 0.9;
+    }
+    &.mfp-removing {
+      opacity: 0;
+    }
+  }
+
+  &.mfp-wrap {
+    .mfp-content {
+      opacity: 0;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+      max-width: 300px;
+    }
+    &.mfp-ready .mfp-content {
+      opacity: 1;
+      max-width: 900px;
+      @media #{$md_layout2} {
+        max-width: 90%;
+      }
+    }
+    &.mfp-removing .mfp-content {
+      opacity: 0;
+      max-width: 300px;
+    }
+  }
+}

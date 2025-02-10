@@ -1,0 +1,315 @@
+/*=========================
+    Spacing 
+==========================*/
+.mobile_padding {
+  @media #{$large_mobile} {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
+// Pddding
+.pt_320 {
+  padding-top: 320px;
+  @media #{$laptop_device} {
+    padding-top: 276.36px;
+  }
+  @media #{$lg_layout} {
+    padding-top: 232.72px;
+  }
+  @media #{$md_layout} {
+    padding-top: 174.54px;
+  }
+  @media #{$sm_layout} {
+    padding-top: 130.9px;
+  }
+}
+
+.pt_150 {
+  padding-top: 150px;
+
+  @media #{$laptop_device} {
+    padding-top: 129.54px;
+  }
+  @media #{$lg_layout} {
+    padding-top: 109px;
+  }
+  @media #{$md_layout2} {
+    padding-top: 70px;
+  }
+}
+
+.py_140 {
+  padding: 140px 0;
+
+  @media #{$laptop_device} {
+    padding: 120.9px 0;
+  }
+  @media #{$lg_layout} {
+    padding: 101.81px 0;
+  }
+  @media #{$md_layout2} {
+    padding: 70px 0;
+  }
+}
+
+.pt_140 {
+  padding-top: 140px;
+
+  @media #{$laptop_device} {
+    padding-top: 120.9px;
+  }
+  @media #{$lg_layout} {
+    padding-top: 101.81px;
+  }
+  @media #{$md_layout2} {
+    padding-top: 70px;
+  }
+}
+
+.pt_120 {
+  padding-top: 120px;
+
+  @media #{$laptop_device} {
+    padding-top: 105.23px;
+  }
+  @media #{$lg_layout} {
+    padding-top: 88.61px;
+  }
+  @media #{$md_layout} {
+    padding-top: 66.46px;
+  }
+  @media #{$sm_layout} {
+    padding-top: 49.84px;
+  }
+}
+
+.pt_100 {
+  padding-top: 100px;
+
+  @media #{$laptop_device} {
+    padding-top: 86.36px;
+  }
+  @media #{$lg_layout} {
+    padding-top: 72.72px;
+  }
+  @media #{$md_layout} {
+    padding-top: 54.54px;
+  }
+  @media #{$sm_layout} {
+    padding-top: 40.9px;
+  }
+}
+.pt_80 {
+  padding-top: 80px;
+
+  @media #{$laptop_device} {
+    padding-top: 66.36px;
+  }
+  @media #{$lg_layout} {
+    padding-top: 52.72px;
+  }
+  @media #{$md_layout} {
+    padding-top: 44.54px;
+  }
+  @media #{$sm_layout} {
+    padding-top: 30.9px;
+  }
+}
+.pb_80 {
+  padding-bottom: 80px;
+
+  @media #{$laptop_device} {
+    padding-bottom: 66.36px;
+  }
+  @media #{$lg_layout} {
+    padding-bottom: 52.72px;
+  }
+  @media #{$md_layout} {
+    padding-bottom: 44.54px;
+  }
+  @media #{$sm_layout} {
+    padding-bottom: 30.9px;
+  }
+}
+
+.pb_100 {
+  padding-bottom: 100px;
+
+  @media #{$laptop_device} {
+    padding-bottom: 86.36px;
+  }
+  @media #{$lg_layout} {
+    padding-bottom: 72.72px;
+  }
+  @media #{$md_layout} {
+    padding-bottom: 54.54px;
+  }
+  @media #{$sm_layout} {
+    padding-bottom: 40.9px;
+  }
+}
+
+.pt_50 {
+  padding-top: 50px;
+
+  @media #{$laptop_device} {
+    padding-top: 50px;
+  }
+  @media #{$lg_layout} {
+    padding-top: 50px;
+  }
+  @media #{$md_layout} {
+    padding-top: 50px;
+  }
+  @media #{$sm_layout} {
+    padding-top: 50px;
+  }
+}
+
+.pb_140 {
+  padding-bottom: 140px;
+
+  @media #{$laptop_device} {
+    padding-bottom: 120.9px;
+  }
+  @media #{$lg_layout} {
+    padding-bottom: 101.81px;
+  }
+  @media #{$md_layout2} {
+    padding-bottom: 60px;
+  }
+}
+
+.pb_150 {
+  padding-bottom: 150px;
+
+  @media #{$laptop_device} {
+    padding-bottom: 129.54px;
+  }
+  @media #{$lg_layout} {
+    padding-bottom: 109px;
+  }
+  @media #{$md_layout2} {
+    padding-bottom: 70px;
+  }
+}
+
+.pb_74 {
+  padding-bottom: 74px;
+  @media #{$laptop_device} {
+    padding-bottom: 74px;
+  }
+  @media #{$lg_layout} {
+    padding-bottom: 74px;
+  }
+  @media #{$md_layout} {
+    padding-bottom: 74px;
+  }
+  @media #{$sm_layout } {
+    padding-bottom: 74px;
+  }
+}
+
+// marign
+.mt_150 {
+  margin-top: 150px;
+
+  @media #{$laptop_device} {
+    margin-top: 129.54px;
+  }
+  @media #{$lg_layout} {
+    margin-top: 109px;
+  }
+  @media #{$md_layout2} {
+    margin-top: 70px;
+  }
+}
+.mt_140 {
+  margin-top: 140px;
+
+  @media #{$laptop_device} {
+    margin-top: 120.9px;
+  }
+  @media #{$lg_layout} {
+    margin-top: 101.81px;
+  }
+  @media #{$md_layout} {
+    margin-top: 76.36px;
+  }
+  @media #{$sm_layout} {
+    margin-top: 52.27px;
+  }
+}
+
+.mt_100 {
+  margin-top: 100px;
+
+  @media #{$laptop_device} {
+    margin-top: 86.36px;
+  }
+  @media #{$lg_layout} {
+    margin-top: 72.72px;
+  }
+  @media #{$md_layout2} {
+    margin-top: 50px;
+  }
+}
+
+.-mb_100 {
+  margin-bottom: -100px;
+
+  @media #{$laptop_device} {
+    margin-bottom: -86.36px;
+  }
+  @media #{$lg_layout} {
+    margin-bottom: -72.72px;
+  }
+  @media #{$md_layout2} {
+    margin-bottom: -50px;
+  }
+}
+
+.mt_80 {
+  margin-top: 80px;
+
+  @media #{$laptop_device} {
+    margin-top: 69px;
+  }
+  @media #{$lg_layout} {
+    margin-top: 58.18px;
+  }
+  @media #{$md_layout} {
+    margin-top: 43.63px;
+  }
+  @media #{$sm_layout} {
+    margin-top: 32.72px;
+  }
+}
+
+.mt_20 {
+  margin-top: 20px;
+}
+
+.mb_17 {
+  margin-bottom: 17px;
+}
+
+.mb_34 {
+  margin-bottom: 34px;
+}
+
+.mb_40 {
+  margin-bottom: 40px;
+}
+
+.mb_50 {
+  margin-bottom: 50px;
+}
+
+.mt__120 {
+  margin-top: -120px;
+  @media #{$md_layout2} {
+    margin-top: -45px;
+  }
+}

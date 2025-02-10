@@ -1,0 +1,15 @@
+/*=========================
+    Partners 
+==========================*/
+.partners {
+  &__list {
+    max-height: 100px;
+    flex-wrap: nowrap;
+    animation: slide_her 35s linear infinite;
+
+    & li {
+      flex-shrink: 0;
+      padding: 0 50px;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+/*=========================
+    Team
+==========================*/
+.team {
+  &__wrapper {
+    max-width: 1820px;
+    width: 92%;
+  }
+}
+
+.vm_team {
+  &__thumb {
+    overflow: hidden;
+    a img {
+      filter: saturate(0%);
+      transition: var(--transition);
+      transform: scale(1.1);
+      @media #{$md_layout, $large_mobile} {
+        width: 100%;
+      }
+    }
+    .social_list {
+      top: -15px;
+      left: -15px;
+      @include visi_opa(hidden, 0);
+      transition: var(--transition);
+      &__item {
+        background-color: var(--color-white);
+        transition: var(--transition);
+        &:hover {
+          background-color: var(--color-primary);
+        }
+      }
+      &__link {
+        line-height: 0;
+        padding: 17px;
+        color: var(--color-black);
+        display: inline-block;
+        transition: var(--transition);
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+        &:hover {
+          color: var(--color-white);
+        }
+        @media #{$laptop_device} {
+          padding: 15px;
+        }
+        @media #{$md_layout} {
+          padding: 12px;
+        }
+        @media #{$large_mobile} {
+          padding: 10px;
+        }
+      }
+    }
+    &:hover .social_list {
+      top: 10px;
+      left: 10px;
+      @include visi_opa(visible, 1);
+    }
+
+    &:hover a img {
+      filter: saturate(100%);
+      transform: scale(1);
+    }
+  }
+  &__content {
+    padding-top: 26px;
+    .name {
+      font-size: var(--fs-24);
+      font-weight: var(--fw-bold);
+      line-height: var(--lh-b1);
+      text-transform: capitalize;
+      @media #{$large_mobile} {
+        font-size: 20px;
+      }
+    }
+  }
+}

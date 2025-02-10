@@ -1,0 +1,112 @@
+/*=========================
+    Nav 
+==========================*/
+.mainmenu__nav {
+  .nav-pills {
+    .nav-item {
+      &.active {
+        color: var(--color-primary);
+        background: none;
+      }
+      + .nav-item {
+        margin-left: 45px;
+      }
+      .nav-link {
+        color: var(--color-white);
+        font-weight: var(--fw-bold);
+        padding: 0;
+        position: relative;
+        line-height: 80px;
+
+        &:hover,
+        &.active {
+          color: var(--color-primary);
+          background: none;
+        }
+
+        &.active::after {
+          position: absolute;
+          top: 53%;
+          right: -12px;
+          transform: translateY(-50%);
+          content: "";
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background-color: var(--color-primary);
+        }
+      }
+    }
+  }
+}
+
+.primary-menu {
+  .menu_item_has_children {
+    position: relative;
+    .sub_menu {
+      position: absolute;
+      text-align: left;
+      min-width: 240px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      left: 0;
+      top: 100%;
+      -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+      box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+      background-color: #fff;
+      z-index: 9;
+      visibility: hidden;
+      opacity: 0;
+      -webkit-transition: all 0.3s ease-in;
+      transition: all 0.3s ease-in;
+      transform: scaleY(0.5);
+      transform-origin: top center;
+      li {
+        + li {
+          border-top: 1px solid rgba(186, 151, 120, 0.16);
+        }
+        a {
+          padding: 11px 22px;
+          display: block;
+          color: var(--color-black);
+          font-size: 15px;
+          position: relative;
+          transition: 0.4s;
+          font-weight: 500;
+          text-decoration: none;
+          &:after {
+            content: "";
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 2px;
+            width: 0;
+            background: var(--color-primary);
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.4s;
+          }
+          &:hover,
+          &.current {
+            padding-left: 33px;
+            color: var(--color-primary);
+            &:after {
+              visibility: visible;
+              opacity: 1;
+              width: 10px;
+            }
+          }
+        }
+      }
+    }
+    &:hover {
+      .sub_menu {
+        transform: scaleY(1);
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}

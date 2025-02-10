@@ -1,0 +1,223 @@
+/*=========================
+    Header 
+==========================*/
+.header {
+  position: absolute !important;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  transition: var(--transition);
+  &:not(.header_white) {
+    .header__main {
+      img.logo_white {
+        display: block !important;
+      }
+    }
+  }
+  &:not(.multiple_header) {
+    .header__top {
+      display: none;
+    }
+  }
+
+  &.multiple_header {
+    position: relative;
+    background-color: var(--color-white);
+    & .header__top {
+      display: block !important;
+      padding-top: 16px;
+      padding-bottom: 64px;
+      @media #{$md_layout2} {
+        padding-bottom: 54px;
+      }
+      .inner {
+        max-width: 85.5%;
+      }
+      .call {
+        font-weight: var(--fw-regular);
+        font-size: var(--fs-16);
+        img {
+          width: 16px;
+          height: 16px;
+          filter: brightness(0);
+        }
+        &__number {
+          color: var(--color-black);
+        }
+      }
+      .top_link {
+        color: var(--color-black);
+        font-family: var(--font-secondary);
+        line-height: 1.62;
+        text-decoration: none;
+        &:hover {
+          color: var(--color-primary);
+        }
+      }
+    }
+
+    & .header__main {
+      width: 95%;
+      position: absolute !important;
+      bottom: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 10px;
+      padding: 10px 76px;
+      @media only screen and (max-width: 1800px) {
+        padding: 10px 0;
+      }
+      @media only screen and (max-width: 1400px) {
+        padding: 0;
+        bottom: -40px;
+      }
+
+      .header_search_box {
+        &.show_box {
+          top: 112%;
+          @media only screen and (max-width: 1401px) {
+            top: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  &__main {
+    max-width: calc(95% - 4px);
+    position: relative;
+    z-index: 2;
+
+    @media only screen and (max-width: 1800px) {
+      max-width: 100%;
+    }
+  }
+
+  &__logo {
+    width: 100px;
+    height: 52px;
+    margin-left: 24px;
+    .logo {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .call {
+    font-size: var(--fs-18);
+    font-weight: var(--fw-bold);
+    &__me {
+      color: var(--color-primary);
+    }
+    &__number {
+      color: var(--color-white);
+    }
+  }
+
+  &__right {
+    .search,
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .search {
+      padding: 31px 24px;
+    }
+    .menu {
+      border-left: 1px solid rgba($color: #fff, $alpha: 0.05);
+      padding: 28px 24px;
+    }
+
+    .header_search_box {
+      top: 60%;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s;
+
+      &.show_box {
+        top: 100%;
+        visibility: visible;
+        opacity: 1;
+
+        @media #{$lg_layout} {
+          top: 103%;
+        }
+        @media #{$md_layout2} {
+          top: 100%;
+        }
+      }
+
+      @media #{$lg_layout, $md_layout, $sm_layout} {
+        right: -80% !important;
+      }
+    }
+  }
+
+  &.header_white {
+    background-color: var(--color-white) !important;
+    .header__main {
+      background-color: var(--color-white);
+      img.logo_black {
+        display: block !important;
+      }
+      .call__number {
+        color: var(--color-black);
+      }
+    }
+    .mainmenu__nav {
+      .nav-pills {
+        .nav-item {
+          .nav-link {
+            color: var(--color-black);
+            &:hover,
+            &.active {
+              color: var(--color-primary);
+            }
+          }
+        }
+      }
+    }
+    .header_search_btn {
+      border-color: var(--color-black);
+      &::before,
+      &::after {
+        background-color: var(--color-black);
+      }
+    }
+    .menu_btn {
+      filter: brightness(0);
+    }
+  }
+
+  &.fixed_top {
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    animation: slideDown 0.4s linear;
+
+    &.multiple_header {
+      background-color: transparent;
+
+      .header__top {
+        visibility: hidden;
+        background-color: transparent;
+        padding: 0;
+      }
+      .header__main {
+        padding: 0;
+        bottom: -60px;
+      }
+    }
+
+    &.header_white {
+      box-shadow: 4px -2px 25px #11111129;
+    }
+  }
+}

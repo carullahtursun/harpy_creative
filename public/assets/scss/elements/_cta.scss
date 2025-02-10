@@ -1,0 +1,91 @@
+/*=========================
+    Call To Action 
+==========================*/
+.cta {
+  &__wrapper {
+    background-image: url(../../../assets/images/banner/banner_bg.webp);
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+
+    @media #{$laptop_device} {
+      height: 345px;
+    }
+    @media #{$lg_layout} {
+      height: 290px;
+    }
+    @media #{$md_layout} {
+      height: 218px;
+    }
+    @media #{$sm_layout} {
+      height: 163px;
+      background-position: right top;
+    }
+
+    .content {
+      transform: translateY(-50%);
+
+      .cta_title {
+        font-weight: var(--fw-regular);
+        padding-right: 30%;
+        margin-top: 0;
+        margin-bottom: 40px;
+
+        @media #{$laptop_device} {
+          margin-bottom: 34px;
+        }
+        @media #{$lg_layout} {
+          margin-bottom: 29px;
+        }
+        @media #{$md_layout} {
+          margin-bottom: 18px;
+        }
+        @media #{$sm_layout} {
+          margin-bottom: 18px;
+          padding-right: 0;
+        }
+        @media #{$large_mobile} {
+          font-size: 25px;
+        }
+      }
+
+      @media #{$sm_layout} {
+        text-align: center;
+        transform: translate(-50%, -50%);
+      }
+
+      @media #{$large_mobile} {
+        width: 90%;
+      }
+    }
+
+    .digital {
+      color: var(--color-white);
+      // text-shadow: 0px 94px 94px rgba(0, 0, 0, 0.05);
+      font-size: 218px;
+      font-weight: 900;
+      line-height: 1;
+
+      @media #{$laptop_device} {
+        font-size: 188px;
+      }
+      @media #{$lg_layout} {
+        font-size: 158px;
+      }
+      @media #{$md_layout} {
+        font-size: 119px;
+        margin-bottom: 20px;
+      }
+      @media #{$sm_layout} {
+        font-size: 89px;
+      }
+      @media #{$large_mobile} {
+        font-size: 70px;
+      }
+      @media #{$small_mobile} {
+        font-size: 52px;
+      }
+    }
+  }
+}

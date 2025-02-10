@@ -1,0 +1,106 @@
+.about_service {
+  & .section_title-large {
+    width: 120%;
+    @media #{$laptop_device} {
+      width: 130%;
+    }
+    @media #{$sm_layout} {
+      margin-bottom: 20px;
+    }
+  }
+
+  .circle_badge {
+    width: calc(31% + 8px);
+    & .center_logo {
+      width: 20%;
+    }
+  }
+
+  & .service_bg {
+    margin-top: 15%;
+    aspect-ratio: 1 / 1.21;
+    @media #{$sm_layout} {
+      margin-top: 0;
+    }
+  }
+
+  & .vm_para {
+    margin-top: 66%;
+    padding-right: 15%;
+
+    @media #{$sm_layout} {
+      margin-top: 0;
+      padding-right: 0;
+    }
+  }
+  & img.arrow_black {
+    margin-top: 18%;
+    max-width: 33%;
+  }
+}
+
+.service_skill {
+  .circle_badge {
+    width: calc(37% + 6px);
+    & .center_logo {
+      width: 20%;
+    }
+
+    @media #{$sm_layout} {
+      position: absolute;
+      right: 0;
+    }
+  }
+  img.digital_skill {
+    position: absolute;
+    bottom: 0;
+    right: 18%;
+    max-width: 752px;
+
+    @media #{$sm_layout} {
+      position: relative;
+      max-width: 100%;
+      right: 0;
+    }
+  }
+  .progress_bar {
+    width: 90%;
+    &__item {
+      position: relative;
+      height: 5px;
+      width: 100%;
+      background-color: rgba($color: #111, $alpha: 0.1);
+      &:not(:last-child) {
+        margin-bottom: 80px;
+      }
+
+      div + div {
+        padding-top: 18px;
+      }
+    }
+    &__progress {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 50%;
+      height: 100%;
+      margin: 0;
+      background-color: #111;
+      transition: width 100ms linear;
+    }
+    &__label,
+    &__value {
+      color: var(--color-black);
+      line-height: 1.62;
+      text-transform: capitalize;
+      margin-bottom: 0;
+    }
+    &__label {
+      font-weight: 700;
+    }
+    &__value {
+      text-align: right;
+    }
+  }
+}

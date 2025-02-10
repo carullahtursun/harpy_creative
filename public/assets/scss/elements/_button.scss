@@ -1,0 +1,277 @@
+/*=========================
+    Buttons 
+==========================*/
+a,
+button {
+  &.vm_btn {
+    text-decoration: none;
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    position: relative;
+    transition: var(--transition);
+    font-family: var(--font-secondary);
+    span {
+      position: relative;
+      z-index: 3;
+
+      & img {
+        transition: var(--transition);
+      }
+    }
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 25px;
+      transition: var(--transition);
+    }
+
+    @media #{$sm_layout} {
+      font-size: 14px;
+    }
+
+    @media #{$large_mobile} {
+      font-size: 12px;
+    }
+  }
+
+  &.fill_btn {
+    color: var(--color-white);
+    &:hover {
+      transform: translateY(-5px);
+      &::before {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &.btn_black {
+    background: var(--color-black);
+    &::before {
+      background-color: var(--color-primary);
+    }
+    &.opacity {
+      background: rgba($color: #fff, $alpha: 0.05);
+    }
+    &.translate_none {
+      margin-right: 30px;
+      &:hover {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &.btn_red {
+    background: var(--color-primary);
+    &::before {
+      background-color: var(--color-white);
+    }
+    &:hover {
+      color: var(--color-black);
+    }
+    &:hover span img {
+      filter: brightness(0);
+    }
+  }
+
+  &.btn_27_59 {
+    padding: 27px 59px;
+    @media #{$lg_layout, $md_layout} {
+      padding: 20px 43px;
+    }
+    @media #{$sm_layout} {
+      padding: 20px 43px;
+    }
+  }
+
+  &.btn_22_50 {
+    padding: 22px 50px;
+    @media #{$laptop_device} {
+      padding: 20px 46px;
+    }
+    @media #{$lg_layout} {
+      padding: 18px 43px;
+    }
+    @media #{$md_layout} {
+      padding: 16px 30px;
+    }
+    @media #{$sm_layout} {
+      padding: 16px 20px;
+    }
+  }
+
+  &.btn_22_32 {
+    padding: 22px 32px;
+    @media #{$laptop_device} {
+      padding: 20px 28px;
+    }
+    @media #{$lg_layout} {
+      padding: 18px 25px;
+    }
+    @media #{$md_layout} {
+      padding: 16px 16px;
+    }
+    @media #{$sm_layout} {
+      padding: 16px 16px;
+    }
+  }
+
+  &.btn_17_32 {
+    padding: 17px 32px;
+    @media #{$sm_layout} {
+      padding: 10px 25px;
+    }
+  }
+
+  &.btn_12_27 {
+    padding: 12px 27px;
+  }
+
+  &.btn_12_39 {
+    padding: 12px 39px;
+  }
+
+  &.btn_trans {
+    background-color: transparent;
+    color: var(--color-black);
+    border: 1px solid var(--color-black);
+    margin-top: 35px;
+    &::before {
+      top: -1px;
+      left: -1px;
+      background-color: var(--color-primary);
+    }
+
+    &:hover {
+      color: var(--color-white);
+      border: 1px solid transparent;
+
+      &::before {
+        width: 100%;
+        height: 100%;
+      }
+      span img {
+        filter: invert(1);
+      }
+    }
+  }
+
+  &.btn_price {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: var(--color-black);
+      z-index: -1;
+      transition: var(--transition);
+    }
+    &:hover {
+      color: var(--color-white);
+      border-color: var(--color-black);
+
+      & span img {
+        filter: invert(1);
+      }
+
+      &::before {
+        width: 5px;
+        height: 25px;
+      }
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &.tab_btn {
+    color: var(--color-black);
+    font-size: var(--fs-20);
+    font-weight: var(--fw-medium);
+    text-transform: capitalize;
+    border: none !important;
+    border-radius: 0 !important;
+    outline: none;
+    margin: 0 !important;
+    padding: 20px 26px;
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-btn);
+
+    &.active,
+    &:hover {
+      color: var(--color-white) !important;
+      background-color: var(--color-primary) !important;
+    }
+
+    &.active::before {
+      background-color: var(--color-white);
+    }
+
+    @media #{$md_layout} {
+      padding: 13.84px 18px;
+      font-size: var(--fs-18);
+    }
+
+    @media #{$sm_layout} {
+      padding: 10px 16px;
+      font-size: 14px;
+    }
+  }
+}
+
+.header_search_btn {
+  width: 18px;
+  height: 18px;
+  border: 2.5px solid white;
+  border-radius: 50%;
+  position: relative;
+  transition: var(--transition);
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 65%;
+    height: 2px;
+    background-color: white;
+    transform-origin: center;
+    transition: var(--transition);
+  }
+
+  &::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &::after {
+    top: 120%;
+    left: 120%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &.close {
+    border-radius: 0;
+  }
+
+  &.close.header_search_btn::before {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &.close.header_search_btn::after {
+    top: 50%;
+    left: 50%;
+  }
+}

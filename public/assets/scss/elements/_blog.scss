@@ -1,0 +1,127 @@
+/*=========================
+    Blog
+==========================*/
+.vm_blog {
+  &__thumbnail {
+    height: auto;
+    overflow: hidden;
+    img {
+      filter: saturate(0%);
+      object-fit: cover;
+      transform: scale(1.1);
+      transition: var(--transition);
+    }
+  }
+
+  &__content {
+    & .title {
+      line-height: 1.41;
+      padding-top: 22px;
+      transition: var(--transition);
+      & svg {
+        transform: translateY(10px);
+        color: var(--color-primary);
+        transition: var(--transition);
+        @include visi_opa("hidden", 0);
+      }
+      @media #{$laptop_device} {
+        font-size: 21px;
+      }
+      @media #{$lg_layout,$md_layout,$sm_layout} {
+        font-size: 17px;
+        padding-top: 18px;
+      }
+      @media #{$large_mobile} {
+        padding-top: 0;
+      }
+    }
+
+    & .divider {
+      width: 100%;
+      height: 1px;
+      background: var(--color-black);
+      margin: 20px 0;
+      opacity: 0.1;
+      transition: var(--transition);
+      @media #{$laptop_device} {
+        margin: 18px 0;
+      }
+      @media #{$lg_layout} {
+        margin: 15px 0;
+      }
+      @media #{$md_layout} {
+        margin: 15px 0;
+      }
+      @media #{$sm_layout} {
+        margin: 15px 0;
+      }
+    }
+
+    & .date {
+      width: 60px;
+      height: 60px;
+      margin-right: 50px;
+      @include shape_bg;
+      @media #{$laptop_device} {
+        width: 52px;
+        height: 52px;
+      }
+      @media #{$lg_layout, $md_layout,$sm_layout} {
+        width: 44px;
+        height: 44px;
+        font-size: 12px;
+      }
+      @media #{$sm_layout} {
+        margin-right: 25px;
+      }
+    }
+
+    & .vm_p {
+      @media #{$lg_layout} {
+        font-size: var(--fs-18);
+      }
+      @media #{$md_layout} {
+        font-size: var(--fs-18);
+      }
+      @media #{$sm_layout} {
+        font-size: var(--fs-18);
+      }
+    }
+
+    @media #{$large_mobile} {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid rgba($color: #111, $alpha: 0.1);
+      padding: 10px;
+    }
+  }
+
+  &:hover &__thumbnail {
+    img {
+      object-fit: cover;
+      filter: saturate(100%);
+      transform: scale(1);
+    }
+  }
+
+  &:hover &__content .title {
+    color: var(--color-primary);
+    & svg {
+      @include visi_opa("visible", 1);
+      transform: translateY(-5px);
+    }
+  }
+
+  &:hover .divider {
+    opacity: 1;
+  }
+  @media #{$large_mobile} {
+    display: flex;
+  }
+  @media #{$small_mobile} {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}

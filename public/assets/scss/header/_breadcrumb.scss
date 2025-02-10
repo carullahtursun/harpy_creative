@@ -1,0 +1,117 @@
+.breadcrumb_wrap {
+  position: relative;
+  z-index: 0;
+  background-image: url(/assets/images/breadcrumb/1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--color-gray);
+  margin-top: 80px;
+  .breadcrumb_content {
+    padding: 163px 0;
+
+    @media #{$sm_layout} {
+      padding: 100px 0;
+    }
+  }
+
+  .page_title {
+    font-size: 128px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+
+    @media #{$lg_layout} {
+      font-size: 75px;
+    }
+    @media #{$md_layout} {
+      font-size: 45px;
+    }
+    @media #{$sm_layout} {
+      font-size: 40px;
+    }
+  }
+  p {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: var(--color-primary);
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 600px;
+    color: #585858;
+    margin-bottom: 20px;
+  }
+  .page_list_border {
+    padding: 10px 25px;
+    display: inline-block;
+    border: 1px solid #fff;
+    position: relative;
+    span {
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      background: var(--color-black);
+      display: inline-block;
+      position: absolute;
+    }
+    .page_list_dot_1 {
+      left: -5px;
+      top: -5px;
+    }
+    .page_list_dot_2 {
+      right: -5px;
+      top: -5px;
+    }
+    .page_list_dot_3 {
+      left: -5px;
+      bottom: -5px;
+    }
+    .page_list_dot_4 {
+      right: -5px;
+      bottom: -5px;
+    }
+
+    @media #{$sm_layout} {
+      padding: 7px 15px;
+    }
+  }
+  .page_list {
+    display: inline-block;
+    li {
+      font-family: var(--font-secondary);
+      display: inline-block;
+      position: relative;
+      padding-left: 17px;
+      padding-right: 5px;
+      font-size: 18px;
+      color: #8b8b8b;
+      a {
+        color: #fff;
+      }
+      &:first-child {
+        padding-left: 23px;
+        a {
+          color: #fff;
+        }
+        &::before {
+          content: "";
+          height: 10px;
+          width: 10px;
+          display: inline-block;
+          background-color: var(--color-primary);
+          border-radius: 50%;
+          top: 10px;
+        }
+      }
+      &::before {
+        content: "/";
+        position: absolute;
+        left: 2px;
+        top: -1px;
+      }
+    }
+  }
+}

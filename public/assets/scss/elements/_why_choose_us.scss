@@ -1,0 +1,46 @@
+/*=========================
+    Why Choose Us
+==========================*/
+.why_choose_us {
+  &__body {
+    margin-top: -33px;
+    .tabs {
+      border-bottom: none;
+      &__item {
+        box-shadow: 0px 1px 2px rgba($color: #111, $alpha: 0.2);
+        &:not(:last-child) {
+          margin-right: 20px;
+
+          @media #{$sm_layout} {
+            margin-right: 0;
+          }
+        }
+      }
+      @media #{$sm_layout} {
+        gap: 10px;
+      }
+    }
+
+    #why_choose_us_tabContent {
+      .flow_chart {
+        height: 100%;
+      }
+      .anychart-credits {
+        display: none;
+      }
+      a.vm_btn:hover {
+        img {
+          filter: invert(1);
+        }
+      }
+    }
+
+    @media #{$md_layout} {
+      margin-top: -26px;
+    }
+
+    @media #{$sm_layout} {
+      margin-top: -20px;
+    }
+  }
+}

@@ -1,0 +1,145 @@
+/*=========================
+    Typography 
+==========================*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 18px;
+  line-height: var(--lh-b2);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-primary);
+  color: var(--color-black);
+  font-weight: var(--fw-regular);
+  background-color: var(--color-white);
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+address,
+p,
+pre,
+blockquote,
+menu,
+ol,
+table,
+hr {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  word-break: break-word;
+  font-family: var(--font-primary);
+  color: var(--color-black);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: var(--h1);
+  line-height: var(--lh-b1);
+}
+
+h2 {
+  font-size: var(--h2);
+  line-height: var(--lh-b3);
+}
+
+h3 {
+  font-size: var(--h3);
+  line-height: 1.31;
+}
+
+h4 {
+  font-size: var(--h4);
+  line-height: 1.08;
+}
+
+h5 {
+  font-size: var(--h5);
+  line-height: 1.24;
+}
+
+// h6 {
+//   font-size: var(--h6);
+//   line-height: 1.25;
+// }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  a {
+    color: inherit;
+  }
+}
+
+@media #{$laptop_device} {
+  h1 {
+    font-size: 111px;
+  }
+  h3 {
+    font-size: 27.63px;
+  }
+}
+@media #{$lg_layout} {
+  h1 {
+    font-size: 93px;
+  }
+  h3 {
+    font-size: 23.27px;
+  }
+}
+@media #{$md_layout} {
+  h1 {
+    font-size: 69.81px;
+  }
+
+  h3 {
+    font-size: 17.45px;
+  }
+}
+@media #{$sm_layout} {
+  h1 {
+    font-size: 52px;
+  }
+
+  h3 {
+    font-size: 17.45px;
+  }
+}
+@media #{$large_mobile} {
+  h1 {
+    font-size: 47px;
+  }
+}
+@media #{$small_mobile} {
+}

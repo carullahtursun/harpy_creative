@@ -1,0 +1,110 @@
+.vm_price {
+  padding: 50px 85px;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  &__title {
+    color: var(--color-black-dark);
+    font-weight: var(--fw-medium);
+    line-height: 0.82;
+    text-transform: capitalize;
+    margin-bottom: 28px;
+    @media #{$lg_layout, $md_layout, $sm_layout} {
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+    @media #{$small_mobile} {
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__type {
+    display: inline-block;
+    border-radius: 100px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    background: var(--color-white);
+    color: var(--color-gray);
+    font-family: var(--font-secondary);
+    line-height: 1.62;
+    padding: 5px 50px;
+    margin-bottom: 40px;
+    @media #{$lg_layout} {
+      padding: 5px 40px;
+      margin-bottom: 30px;
+    }
+    @media #{$small_mobile} {
+      font-size: 15px;
+      padding: 1px 20px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__price {
+    color: var(--color-black-dark);
+    font-weight: var(--fw-medium);
+    line-height: 0.5;
+    & sub {
+      font-size: 16px;
+      color: var(--color-gray);
+      vertical-align: middle;
+      left: -10px;
+    }
+    @media #{$lg_layout} {
+      font-size: 40px;
+    }
+    @media #{$small_mobile} {
+      font-size: 30px;
+      sub {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__package {
+    margin: 40px 0;
+    & li {
+      padding-left: 20px;
+      & p {
+        color: var(--color-gray);
+        line-height: 2.25;
+        margin-bottom: 0;
+        text-align: left;
+        @include line_clamp(1);
+        @media #{$lg_layout} {
+          line-height: 2;
+        }
+        @media #{$small_mobile} {
+          font-size: 15px;
+          line-height: 1.62;
+        }
+      }
+      &::before {
+        content: url(../../../assets/images/icons/marker_check.svg);
+        display: block;
+        width: 10px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+    }
+    @media #{$lg_layout} {
+      margin: 30px 0;
+    }
+    @media #{$small_mobile} {
+      margin: 10% 0;
+    }
+  }
+
+  @media #{$laptop_device} {
+    padding: 40px 55px;
+  }
+  @media #{$lg_layout, $md_layout} {
+    padding: 40px;
+  }
+  @media #{$small_mobile} {
+    padding: 40px 30px;
+  }
+}

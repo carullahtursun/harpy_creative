@@ -1,0 +1,117 @@
+/*=========================
+    What We Do
+==========================*/
+.what_we_do {
+  &-02 {
+    .img_container {
+      @media #{$md_layout} {
+        max-width: 79%;
+        margin: auto;
+      }
+    }
+  }
+  .container_lg_fluid {
+    .content {
+      padding-right: 12%;
+      padding-left: 14%;
+
+      @media #{$extra_device,$laptop_device} {
+        padding-right: 5%;
+        padding-left: 10%;
+      }
+
+      @media #{$lg_layout} {
+        padding-right: 8%;
+        padding-left: 10%;
+      }
+
+      @media #{$md_layout, $sm_layout} {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+
+  .content {
+    .section_title {
+      margin-bottom: 8px;
+      @media #{$laptop_device} {
+        margin-bottom: 5px;
+      }
+      @media #{$lg_layout} {
+        margin-bottom: 5px;
+      }
+      @media #{$md_layout, $sm_layout} {
+        margin-bottom: 5px;
+      }
+    }
+
+    .section_description {
+      @media #{$md_layout} {
+        font-size: 18px;
+      }
+    }
+
+    .do_list {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 19.5px;
+        width: 2px;
+        height: 82%;
+        background: linear-gradient(180deg, #111 0%, #fff 100%);
+        z-index: -1;
+        @media #{$laptop_device} {
+          height: 76%;
+        }
+        @media #{$lg_layout, $md_layout, $sm_layout} {
+          height: 76%;
+        }
+      }
+
+      &__item {
+        &:not(:last-child) {
+          margin-bottom: 33px;
+          @media #{$laptop_device} {
+            margin-bottom: 20px;
+          }
+          @media #{$lg_layout,$md_layout,$sm_layout} {
+            margin-bottom: 10px;
+          }
+        }
+        .marker {
+          @include shape_bg;
+          padding: 12px;
+          margin-right: 36px;
+          @media #{$md_layout, $sm_layout} {
+            margin-right: 10px;
+          }
+        }
+
+        @media #{$laptop_device} {
+          h4 {
+            margin-bottom: 5px;
+          }
+        }
+        @media #{$lg_layout} {
+          h4 {
+            margin-bottom: 5px;
+          }
+          .vm_para {
+            @include line_clamp(2);
+          }
+        }
+        @media #{$md_layout,$sm_layout} {
+          h4 {
+            font-size: 21px;
+            margin-bottom: 5px;
+          }
+          .vm_para {
+            @include line_clamp(2);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.bg_gray {
+  background-color: rgba(17, 17, 17, 0.05);
+}
+
+.bg_black {
+  background-color: var(--color-black);
+}
+
+.bg_white {
+  background-color: #fff;
+}
+
+.-z_1 {
+  z-index: -1;
+}
+
+.w_content {
+  width: max-content !important;
+}
+.end--10 {
+  right: -10px;
+}

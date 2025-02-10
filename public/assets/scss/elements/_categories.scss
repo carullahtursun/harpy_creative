@@ -1,0 +1,120 @@
+/*=========================
+    Categories
+==========================*/
+.categories,
+.link_widget {
+  &__list {
+    & li {
+      margin: 0 3.8vw;
+
+      @media #{$sm_layout} {
+        margin: 0 29px;
+      }
+    }
+  }
+  &_item,
+  a.link {
+    color: var(--color-black);
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: white;
+    word-break: keep-all;
+    white-space: -moz-pre-space;
+
+    line-height: normal;
+    cursor: default;
+    transition: all 0.4s ease;
+    position: relative;
+    font-size: 8vw;
+    font-weight: 700;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -3.8vw;
+      width: 1.6vw;
+      height: 1.6vw;
+      border-radius: 100%;
+      background-color: var(--color-black);
+
+      @media #{$sm_layout} {
+        width: 12px;
+        height: 12px;
+        left: -35px;
+      }
+    }
+
+    &::after {
+      content: "";
+      width: 11.5vw;
+      height: 11.5vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 51%;
+      transform: translateY(-50%) scale(0);
+      transform-origin: center;
+      right: -11vw;
+      z-index: 1;
+      background-image: url(../../../assets/images/icons/arrow_black.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s ease;
+
+      @media #{$sm_layout} {
+        width: 88px;
+        height: 88px;
+      }
+      @media #{$large_mobile} {
+        right: -73px;
+      }
+    }
+
+    &:hover {
+      color: var(--color-black);
+      -webkit-text-stroke: none;
+      -webkit-text-fill-color: var(--color-black);
+      &::after {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(-50%) scale(1);
+      }
+    }
+    @media #{$sm_layout} {
+      font-size: 69px;
+    }
+  }
+
+  a.link {
+    -webkit-text-stroke: none;
+    -webkit-text-fill-color: var(--color-black);
+    font-weight: 700;
+    cursor: pointer;
+
+    &::after {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+    }
+
+    &:hover {
+      &::after {
+        right: unset;
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+
+    @media #{$large_mobile} {
+      font-size: 10vw;
+    }
+  }
+}
+.link_widget {
+  overflow: visible;
+}
