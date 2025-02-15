@@ -1,23 +1,22 @@
 // Hero Oner
 export const heroOneData = [
   {
-    title: "Digital Service Agency vmix",
-    description: "We're solutions for you digital creative agency service",
-    btnText: "GET STARTED",
+    title: "Dijital Hizmet Ajansı Harpy Creative",
+    description: "Dijital yaratıcı ajans hizmetleri için çözümler sunuyoruz",
+    btnText: "BAŞLAYIN",
   },
   {
-    title: "Get Fresh Business Ideas",
-    description:
-      "Mauris ac volutpat velit. Curabitur laoreet hendrerit varius.",
-    btnText: "GET STARTED",
+    title: "Yeni İş Fikirleri Edinin",
+    description: "Mauris ac volutpat velit. Curabitur laoreet hendrerit varius.",
+    btnText: "BAŞLAYIN",
   },
   {
-    title: "Digital Creative Agency Service",
-    description:
-      "Mauris ac volutpat velit. Curabitur laoreet hendrerit varius.",
-    btnText: "GET STARTED",
+    title: "Dijital Yaratıcı Ajans Hizmeti",
+    description: "Mauris ac volutpat velit. Curabitur laoreet hendrerit varius.",
+    btnText: "BAŞLAYIN",
   },
 ];
+
 
 // Hero Two
 export const heroTowData = [

@@ -13,6 +13,7 @@ import WhatWeDo from "@/components/WhatWeDo/WhatWeDo";
 import WhyChoose from "@/components/WhyChooseUs/WhyChoose";
 import PortfolioSlider from "@/components/Portfolios/PortfolioSlider";
 import VimixLayout from "@/components/Layout/VimixLayout";
+import PortfolioSliderTwo from "@/components/Portfolios/PortfolioSliderTwo";
 
 export default function HomeOne() {
   return (
@@ -22,13 +23,7 @@ export default function HomeOne() {
       <PartnerScrolling />
       <ServiceOne sectionTitle />
       <CategoriesScrolling />
-      <AboutOne />
-      <WhyChoose />
-      <PortfolioSlider />
-      <TeamOne gray padding="pb_80" />
-      <TestimonialOne defaultOne />
-      <WhatWeDo defaultOne />
-      <LatestBlogOne padding="pb-0" />
+      <PortfolioSliderTwo />
       <CtaOne />
     </VimixLayout>
   );

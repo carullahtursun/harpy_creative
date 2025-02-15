@@ -6,35 +6,39 @@ export default {
   logo: FooterLogo,
   mainLogo: FooterLogoMain,
   submitArrowImage: SubmitArrow,
-  title: "Contacts",
-  descriptionOne: "United States 866 Wilshire, 2nd Street Los",
+  title: "İletişim",
+  descriptionOne: "Los Angeles, California",
   descriptionTwo: "Angeles 90024.",
-  email: "vmixbrand@gmail.com",
-  phone: "+880 112233445",
-  topLinksTitle: "Top Links",
-  footerBottomTitle: "Have any projects in mind? Get in touch!",
-  copyRightText: "Copyright © 2024 for",
-  companyName: "Vmix",
+  email: "harpycreative@gmail.com",
+  phone: "+90 123 456 7890",
+  topLinksTitle: "Hızlı Bağlantılar",
+  footerBottomTitle: "Aklınızda herhangi bir proje var mı? İletişim kurun!",
+  copyRightText: "Harpy Creative © 2025 ",
+  companyName: "Harpy Creative",
   links: [
     {
-      name: "About",
+      name: "hakkımızda",
       href: "about",
     },
     {
+      name: "Portföy",
+      href: "portfolio",
+    },
+   /* {
       name: "Services",
       href: "service",
-    },
-    {
+    },*/
+   /* {
       name: "Team",
       href: "team",
-    },
-    {
+    },*/
+    /*{
       name: "Pricing",
       href: "pricing",
-    },
+    },*/
   ],
   usefulLinks: [
-    {
+  /*  {
       name: "Portfolio",
       href: "portfolio",
     },
@@ -49,6 +53,6 @@ export default {
     {
       name: "Case Studies",
       href: "portfolio-details",
-    },
+    },*/
   ],
 };

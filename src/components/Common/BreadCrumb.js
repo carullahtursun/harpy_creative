@@ -22,7 +22,7 @@ const BreadCrumb = ({ pageTitle, activePage, breadCrumbBg }) => {
                 <span className="page_list_dot_4"></span>
                 <ul className="page_list">
                   <li>
-                    <Link href="/">Home</Link>
+                    <Link href="/">Ana Sayfa</Link>
                   </li>
                   <li>{activePage}</li>
                 </ul>

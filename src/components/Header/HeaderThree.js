@@ -139,7 +139,7 @@ export default function HeaderThree({ defaultHeader }) {
               >
                 <span className="d-flex align-items-center">
                   <Image src={arrowRight} alt="arrow_right" className="me-3" />
-                  Get Started
+                  Başlayalım
                 </span>
               </Link>
 

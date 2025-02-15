@@ -8,8 +8,8 @@ export default function Contact() {
   return (
     <VimixLayout>
       <BreadCrumb
-        pageTitle="Contact Page"
-        activePage="Contact"
+        pageTitle="İletişim"
+        activePage="İletişim"
         breadCrumbBg="assets/images/breadcrumb/contact.webp"
       />
       <FullWidthMap />

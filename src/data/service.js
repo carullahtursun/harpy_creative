@@ -6,37 +6,38 @@ import serviceOneSeoOptizationIcon from "@/../public/assets/images/services/seo_
 
 export const serviceOneData = {
   brandIcon: serviceOneBrandIcon,
-  subHeading: "Why Choose Us",
-  heading: "We Have Bright A New Digital Work System For You",
+  subHeading: "Neden Bizi Seçmelisiniz",
+  heading: "Sizin için yeni bir dijital çalışma sistemimiz var",
   items: [
     {
       icon: serviceOneStrategyIcon,
-      title: "Stratagy Plan",
-      description: "Creating a strategic plan is a critical process for",
-      features: ["Brand Strategy", "Brand Design"],
+      title: "Strateji Planı",
+      description: "Stratejik bir plan oluşturmak kritik bir süreçtir.",
+      features: ["Marka Stratejisi", "Marka Tasarımı"],
     },
     {
       icon: serviceOneEmailMarketingIcon,
-      title: "Email Marketing",
+      title: "E-posta Pazarlama",
       description:
-        "Email marketing is a powerful tool for businesses to connect",
-      features: ["Add Email Marketing", "Web Design"],
+          "E-posta pazarlama, işletmelerin müşterileriyle bağlantı kurması için güçlü bir araçtır.",
+      features: ["E-posta Pazarlama Ekle", "Web Tasarımı"],
     },
     {
       icon: serviceOneContentMarketingIcon,
-      title: "Content Marketing",
+      title: "İçerik Pazarlama",
       description:
-        "Content marketing is a strategic approach focused on creating",
-      features: ["Content Spiking", "Monthly Support"],
+          "İçerik pazarlama, değerli ve ilgi çekici içerikler oluşturarak hedef kitlenize ulaşmayı amaçlayan stratejik bir yaklaşımdır.",
+      features: ["İçerik Yayılımı", "Aylık Destek"],
     },
     {
       icon: serviceOneSeoOptizationIcon,
-      title: "SEO Optimization",
-      description: "Utilize tools like Google Keyword Planner to discover",
-      features: ["Google SEO", "Online Optimization"],
+      title: "SEO Optimizasyonu",
+      description: "Google Keyword Planner gibi araçları kullanarak keşif yapın.",
+      features: ["Google SEO", "Çevrimiçi Optimizasyon"],
     },
   ],
 };
+
 
 import arrowBlack from "@/../public/assets/images/icons/arrow_black.svg";
 import brandIcon from "@/../public/assets/images/logo/logo_icon.svg";

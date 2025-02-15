@@ -11,7 +11,7 @@ export default function PortfolioDetails() {
     <VimixLayout>
       <HeaderOne />
       <div className="portfolio_details_page pb_140">
-        <div className="thumb">
+        <div className="thumb"> 
           <Image src={data.portfolioBannerImage} className="w-100" alt="img" />
         </div>
         <div className="container">

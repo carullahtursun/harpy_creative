@@ -136,12 +136,12 @@ export default function HeaderOne() {
                     alt="phone"
                     className="img-fluid"
                   />
-                  <p className="call__me m-0 ms-1">Call Me:</p>
-                  <p className="call__number m-0">(1)245-45678</p>
+                  <p className="call__me m-0 ms-1">Bizi Arayın:</p>
+                  <p className="call__number m-0">+(90) 505 555 5555</p>
                 </div>
               </div>
 
-              <div className="position-relative flex-shrink-0">
+             {/* <div className="position-relative flex-shrink-0">
                 <div className="search ms-auto">
                   <button
                     className={`header_search_btn ${showBox ? "close" : ""}`}
@@ -192,7 +192,7 @@ export default function HeaderOne() {
                     </button>
                   </form>
                 </div>
-              </div>
+              </div>*/}
 
               <button
                 className="menu menu_btn flex-shrink-0"

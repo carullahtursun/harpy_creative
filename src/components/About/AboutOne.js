@@ -15,7 +15,7 @@ export default function AboutOne() {
             className="col-lg-5 wow animated fadeInLeft"
             data-wow-duration="1.5s"
             data-wow-delay="0.3s"
-          >
+          >dsgsdf hsrth srth srth s
             <div className="img_container">
               {data.image ? (
                 <Image src={data.image} alt="about_us" className="mask_img" />

@@ -50,24 +50,24 @@ export const aboutTwoData = {
 };
 
 export const aboutMainData = {
-  title: "About For vmix Business Service agency",
-  subTitle: "An individual who operates or starts a business with the same old business idea. Entrepreneur individual.",
-  description: "Mauris ac volutpat velit. Curabitur laoreet hendrerit varius. In lobortis interdum ipsum, vel venenatis ipsum tempor a. Etiam lectus lorem, imperdiet eu facilisis et, euismod ac enim. Ut vitae fermentum tortor, at placerat massa.",
-  badgeText: "vmix digital business service website",
+  title: "VMIX İş Hizmet Ajansı için Hakkında",
+  subTitle: "Aynı eski iş fikriyle bir iş yapan veya iş yapan bir birey. Girişimci birey.",
+  description: "Mauris ve hafta sonu istiyor. Sohbet Bürosu Varius. Bazen kartonda veya çok uzun sterilize edildi. Seçilen lorem bile, futbol antioksidanlarını finanse etmek ve Euismod ve için. Sıcaklığın sıcaklığına, ancak kütle yatırın.",
+  badgeText: "VMIX Dijital İş Servisi Web Sitesi",
   logo: LogoIcon,
   circeTextBgImage: CircleTextBg,
   mainImage: MainImage,
   services: [
     {
-      name: "Strategy Plan",
+      name: "Strateji planı",
       icon: StrategyIcon,
     },
     {
-      name: "Business Idea",
+      name: "İş fikri",
       icon: BusinessIcon,
     },
     {
-      name: "SEO Content",
+      name: "SEO içeriği",
       icon: SeoIcon,
     },
   ],

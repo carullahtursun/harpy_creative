@@ -59,11 +59,11 @@ export default function MobileMenu() {
             </div>
           </div>
           <p className="menu_discription">
-            Vmix provides the capability to record live productions in various
-            formats.
+            VMIX, canlı prodüksiyonları çeşitli olarak kaydetme yeteneği sağlar.
+            formatlar.
           </p>
           <p className="menu_discription">
-            Vmix include an instant reply feature to create replays during live.
+            VMIX, canlı sırasında tekrarlar oluşturmak için anında bir cevap özelliği içerir.
           </p>
         </div>
 
@@ -121,7 +121,7 @@ export default function MobileMenu() {
                 <MapPin />
               </div>
               <p className="text-white mb-0">
-                United States 866 Wilshire, 2nd Street Los Angeles 90024.
+                İstanbul, Türkiye
               </p>
             </li>
             <li>
@@ -129,8 +129,8 @@ export default function MobileMenu() {
                 <Phone />
               </div>
               <div className="d-flex flex-column">
-                <a href="tel:+88011223344">+(1) 123 456 7890</a>
-                <a href="tel:+88011223344">+(1) 098 765 4321</a>
+                <a href="tel:+88011223344">+90 123 456 7890</a>
+                <a href="tel:+88011223344">+90 123 456 7890</a>
               </div>
             </li>
             <li>
@@ -138,9 +138,9 @@ export default function MobileMenu() {
                 <Mail />
               </div>
               <div className="d-flex flex-column">
-                <a href="mailto:vmix.info@gmail.com">vmix.info@gmail.com</a>
-                <a href="mailto:vmix.example@driller.com">
-                  vmix.example@driller.com
+                <a href="harpycreative@gmail.com">harpycreative@gmail.com</a>
+                <a href="harpycreative@gmail.com">
+                  harpycreative@gmail.com
                 </a>
               </div>
             </li>
@@ -148,7 +148,7 @@ export default function MobileMenu() {
         </div>
 
         <div className="social_share">
-          <p className="social_share__title">Find Us</p>
+          <p className="social_share__title">Bizi bul</p>
           <ul className="social_share__list d-flex align-items-center m-0 p-0">
             <li className="facebook d-flex align-items-center justify-content-center">
               <a href="#" className="social_share__list_link">

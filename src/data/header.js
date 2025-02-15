@@ -1,27 +1,23 @@
 const menuItems = [
   {
     label: "Home",
-    href: "#",
-    subMenu: [
-      { label: "Home 01", href: "/" },
-      { label: "Home 02", href: "home-two" },
-      { label: "Home 03", href: "home-three" },
-    ],
-  },
-  {
-    label: "About Us",
-    href: "about",
+    href: "/",
     subMenu: [],
   },
   {
+    label: "Hakkımızda",
+    href: "about",
+    subMenu: [],
+  },
+/*   {
     label: "Service",
     href: "#",
     subMenu: [
       { label: "Service", href: "service" },
       { label: "Service Details", href: "service-details" },
     ],
-  },
-  {
+  }, */
+ /*  {
     label: "Pages",
     href: "#",
     subMenu: [
@@ -31,8 +27,8 @@ const menuItems = [
       { label: "Testimonials", href: "testimonial" },
       { label: "Pricing", href: "pricing" },
     ],
-  },
-  {
+  }, */
+ /*  {
     label: "Blog",
     href: "#",
     subMenu: [
@@ -40,9 +36,9 @@ const menuItems = [
       { label: "Blog Grid", href: "blog-grid" },
       { label: "Blog Details", href: "blog-details" },
     ],
-  },
+  }, */
   {
-    label: "Contact Us",
+    label: "İletişim",
     href: "contact",
     subMenu: [],
   },
@@ -51,28 +47,16 @@ const menuItems = [
 
 const desktopMenu = [
   {
-    label: "Home",
-    href: "#",
-    subMenu: [
-      { label: "Home 01", href: "/" },
-      { label: "Home 02", href: "home-two" },
-      { label: "Home 03", href: "home-three" },
-    ],
-  },
-  {
-    label: "About Us",
-    href: "about",
+    label: "Anasayfa",
+    href: "/",
     subMenu: [],
   },
   {
-    label: "Service",
-    href: "#",
-    subMenu: [
-      { label: "Service", href: "service" },
-      { label: "Service Details", href: "service-details" },
-    ],
+    label: "Hakkımızda",
+    href: "about",
+    subMenu: [],
   },
-  {
+  /* {
     label: "Pages",
     href: "#",
     subMenu: [
@@ -83,8 +67,8 @@ const desktopMenu = [
       { label: "Pricing", href: "pricing" },
       { label: "404 Page", href: "not-found" },
     ],
-  },
-  {
+  }, */
+  /* {
     label: "Blog",
     href: "#",
     subMenu: [
@@ -92,9 +76,9 @@ const desktopMenu = [
       { label: "Blog Grid", href: "blog-grid" },
       { label: "Blog Details", href: "blog-details" },
     ],
-  },
+  }, */
   {
-    label: "Contact Us",
+    label: "İletişim",
     href: "contact",
     subMenu: [],
   },

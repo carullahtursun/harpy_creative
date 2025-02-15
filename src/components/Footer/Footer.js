@@ -7,7 +7,7 @@ import Image from "next/image";
 
 import data from "@/data/footer";
 
-export default function Footer() {
+export default function     Footer() {
   const { showScrollTop, scrollToTop } = useThemeContext();
   return (
     <>
@@ -116,7 +116,7 @@ export default function Footer() {
                   <input
                     type="email"
                     name="email"
-                    placeholder="Enter your email address..."
+                    placeholder="E -posta adresinizi girin ..."
                     required
                   />
                   <button
