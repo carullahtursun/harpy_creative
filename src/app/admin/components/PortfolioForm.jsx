@@ -116,12 +116,12 @@ export default function PortfolioForm() {
 
         try {
             await deletePortfolio(portfolio.id);
-            if (portfolio.images) {
+            /*if (portfolio.images) {
                 await Promise.all(portfolio.images.map(img => deleteFromCloudinary(img.deleteToken)));
             }
             if (portfolio.heroImage) {
                 await deleteFromCloudinary(portfolio.heroImage.deleteToken);
-            }
+            }*/
             setPortfolios(portfolios.filter(p => p.id !== portfolio.id));
             alert("Portfolyo silindi!");
         } catch (error) {
