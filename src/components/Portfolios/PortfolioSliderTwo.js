@@ -1,13 +1,27 @@
 "use client";
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Link from "next/link";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import ArrowDown from "@/../public/assets/images/icons/download_icon.svg";
 import { portfolioTwoData as portfolio } from "@/data/portfolio";
+import {getPortfolios} from "@/config/portfolioService";
 
 export default function PortfolioSliderTwo() {
+  const [portfolios, setPortfolios] = useState([]);
+
+  console.log("portfolio",portfolio)
+  console.log("portfolios",portfolios)
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await getPortfolios();
+      setPortfolios(data);
+    };
+    fetchData();
+  }, []);
+
   const swiperOptions = {
     slidesPerView: 1,
     spaceBetween: 50,
@@ -40,18 +54,19 @@ export default function PortfolioSliderTwo() {
           modules={[Navigation, Pagination]}
           className="portfolio_slider_02"
         >
-          {portfolio.slides.map((slide, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={1}>
               <div className="vm_grid style_02">
-                {slide.map((src, index) => (
+                {portfolios.map((src, index) => (
                   <div
                     key={index}
                     className={`grid_item grid_item-${index + 1}`}
                   >
                     <Image
-                      src={src}
+                      src={src.images[0].url}
                       alt="portfolio_img"
                       className="portfolio_img"
+                      width={416}
+                      height={416}
                     />
                     <Link
                       href="portfolio-details"
@@ -63,7 +78,6 @@ export default function PortfolioSliderTwo() {
                 ))}
               </div>
             </SwiperSlide>
-          ))}
 
           <div className="slider_pagination slider_pagination_bottom d-flex align-items-center position-absolute">
             <button className="slide_btn slide_btn_prev slide_btn_prev-black position-relative"></button>

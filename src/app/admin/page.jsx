@@ -12,7 +12,7 @@ import logoBlack from "@/../public/assets/images/logo/logo_black.svg";
 import phoneVolumeRed from "@/../public/assets/images/icons/phone_volume_red.svg";
 import menuWhite from "@/../public/assets/images/icons/menu_white.svg";
 import CategoryForm from "./components/CategoryForm";
-import BlogForm from "./components/BlogForm";
+import PortfolioForm from "./components/PortfolioForm";
 
 export default function AdminPanel() {
     const {toggleMobileMenu, isFixedTop} = useThemeContext();
@@ -20,6 +20,7 @@ export default function AdminPanel() {
     const pathName = usePathname();
     const routePath = pathName == "/" ? pathName : pathName.replace(/^\/+/g, "");
 
+    console.log("sdfsdfs",process.env.NEXT_PUBLIC_FIREBASE_API_KEY)
     return (
         <>
             <header className={`header bg_black ${isFixedTop ? "fixed_top" : ""}`}>
@@ -47,25 +48,7 @@ export default function AdminPanel() {
                         <div className="header__center d-flex align-items-center justify-content-center">
                             <nav className="mainmenu__nav">
                                 <ul className="primary-menu nav nav-pills">
-                                    <li
-                                        className={`nav-item `}
-                                    >
-                                        <>
-                                            <Link
-                                                className={`nav-link ${
-                                                    activePage === "category"
-                                                        ? "active"
-                                                        : ""
-                                                }`}
-                                                href={"#"}
-                                                onClick={() => setActivePage("category")}
-                                                scroll={false}
-                                            >
-                                                Kategori Ekle
-                                            </Link>
-                                        </>
 
-                                    </li>
                                     <li
                                         className={`nav-item `}
                                     >
@@ -94,7 +77,7 @@ export default function AdminPanel() {
             </header>
             <div className="d-flex justify-content-center mt-5">
                 <div className="bg-dark text-white shadow-lg p-4 w-100">
-                    {activePage === "category" ? <CategoryForm/> : <BlogForm/>}
+                    {activePage === "category" ? <CategoryForm/> : <PortfolioForm/>}
                 </div>
             </div>
         </>

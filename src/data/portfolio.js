@@ -46,8 +46,8 @@ export const portfolioOneData = {
 
 // Portfolio Two
 export const portfolioTwoData = {
-  subHeading: "Best Of Work",
-  heading: "We Have Bright A New Digital Work Showcase",
+  subHeading: "En İyi İş",
+  heading: "Parlak yeni bir dijital çalışma vitrimiz var",
   slides: [
     [
       portfolioOneImg,
@@ -56,15 +56,15 @@ export const portfolioTwoData = {
       portfolioFiveImg,
       portfolioSixImg,
       portfolioEightImg,
-    ],
-    [
+    ]
+    /*[
       portfolioOneImg,
       portfolioThreeImg,
       portfolioFourImg,
       portfolioFiveImg,
       portfolioSixImg,
       portfolioEightImg,
-    ],
+    ],*/
   ],
 };
 
