@@ -9,8 +9,6 @@ import {desktopMenu} from "@/data/header";
 
 import logoWhite from "@/../public/assets/images/logo/logo_white.svg";
 import logoBlack from "@/../public/assets/images/logo/logo_black.svg";
-import phoneVolumeRed from "@/../public/assets/images/icons/phone_volume_red.svg";
-import menuWhite from "@/../public/assets/images/icons/menu_white.svg";
 import CategoryForm from "./components/CategoryForm";
 import PortfolioForm from "./components/PortfolioForm";
 
@@ -18,9 +16,7 @@ export default function AdminPanel() {
     const {toggleMobileMenu, isFixedTop} = useThemeContext();
     const [activePage, setActivePage] = useState("blog");
     const pathName = usePathname();
-    const routePath = pathName == "/" ? pathName : pathName.replace(/^\/+/g, "");
 
-    console.log("sdfsdfs",process.env.NEXT_PUBLIC_FIREBASE_API_KEY)
     return (
         <>
             <header className={`header bg_black ${isFixedTop ? "fixed_top" : ""}`}>

@@ -11,9 +11,6 @@ import {getPortfolios} from "@/config/portfolioService";
 export default function PortfolioSliderTwo() {
   const [portfolios, setPortfolios] = useState([]);
 
-  console.log("portfolio",portfolio)
-  console.log("portfolios",portfolios)
-
   useEffect(() => {
     const fetchData = async () => {
       const data = await getPortfolios();
@@ -69,7 +66,7 @@ export default function PortfolioSliderTwo() {
                       height={416}
                     />
                     <Link
-                      href="portfolio-details"
+                      href={`/detail/${src.id}`}
                       className="portfolio_link d-flex align-items-center justify-content-center"
                     >
                       <Image src={ArrowDown} alt="arrow_down" />

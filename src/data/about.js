@@ -50,10 +50,10 @@ export const aboutTwoData = {
 };
 
 export const aboutMainData = {
-  title: "VMIX İş Hizmet Ajansı için Hakkında",
-  subTitle: "Aynı eski iş fikriyle bir iş yapan veya iş yapan bir birey. Girişimci birey.",
-  description: "Mauris ve hafta sonu istiyor. Sohbet Bürosu Varius. Bazen kartonda veya çok uzun sterilize edildi. Seçilen lorem bile, futbol antioksidanlarını finanse etmek ve Euismod ve için. Sıcaklığın sıcaklığına, ancak kütle yatırın.",
-  badgeText: "VMIX Dijital İş Servisi Web Sitesi",
+  title: "Harpy Creative Hakkında",
+  subTitle: "Yaratıcılık ve İnovasyonla Geleceği Şekillendiriyoruz",
+  description: "Harpy Creative, dijital dünyanın sınırlarını zorlayan, yenilikçi ve dinamik bir kreatif ajansıdır. Markaların hikayelerini etkileyici ve özgün bir şekilde anlatarak, onların dijital dünyada öne çıkmalarını sağlıyoruz. Yapay zeka, dijital pazarlama, post prodüksiyon ve marka kimliği alanlarında sunduğumuz kapsamlı hizmetlerle, müşterilerimizin ihtiyaçlarını en üst düzeyde karşılamayı hedefliyoruz.",
+  badgeText: "Harpy Creative",
   logo: LogoIcon,
   circeTextBgImage: CircleTextBg,
   mainImage: MainImage,

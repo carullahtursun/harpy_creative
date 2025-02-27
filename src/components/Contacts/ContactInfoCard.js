@@ -49,7 +49,7 @@ export default function ContactInfoCard() {
                   className="vm_btn fill_btn btn_red btn_17_32 d-inline-block"
                   href="tel:+245-45678"
                 >
-                  <span>{data.cta.phone} call</span>
+                  <span>{data.cta.phone} Ara</span>
                 </Link>
               </div>
             </div>

@@ -1,4 +1,4 @@
-import { collection, addDoc, getDocs, deleteDoc, doc, updateDoc, serverTimestamp } from "firebase/firestore";
+import { collection, addDoc, getDocs, deleteDoc, doc, updateDoc, serverTimestamp ,getDoc} from "firebase/firestore";
 import { db } from "./firebase";
 
 export const addPortfolio = async (portfolioData) => {
@@ -42,6 +42,24 @@ export const deletePortfolio = async (portfolioId) => {
         return true;
     } catch (error) {
         console.error("Portfolyo silinirken hata oluştu:", error);
+        throw error;
+    }
+};
+
+// 🔹 Portfolyo Detaylarını Alma Fonksiyonu
+export const getPortfolioById = async (portfolioId) => {
+    try {
+        const docRef = doc(db, "portfolios", portfolioId);
+        const docSnap = await getDoc(docRef);
+
+        if (docSnap.exists()) {
+            return { id: docSnap.id, ...docSnap.data() };
+        } else {
+            console.log("Portfolyo bulunamadı!");
+            return null;
+        }
+    } catch (error) {
+        console.error("Portfolyo alınırken hata oluştu:", error);
         throw error;
     }
 };

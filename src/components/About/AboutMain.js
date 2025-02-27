@@ -3,7 +3,7 @@ import Image from "next/image";
 import AboutStrategy from "./AboutStrategy";
 
 import { aboutMainData as data } from "@/data/about";
-
+import WhatWeDo from "@/components/WhatWeDo/WhatWeDo";
 export default function AboutMain() {
   return (
     <div className="about_us pt_150">
@@ -77,9 +77,12 @@ export default function AboutMain() {
 
               <AboutStrategy />
             </div>
+
           </div>
         </div>
+        <WhatWeDo />
       </div>
+
     </div>
   );
 }

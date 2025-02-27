@@ -59,12 +59,9 @@ export default function MobileMenu() {
             </div>
           </div>
           <p className="menu_discription">
-            VMIX, canlı prodüksiyonları çeşitli olarak kaydetme yeteneği sağlar.
-            formatlar.
+            Dijital dünyada markanızı öne çıkarmak için buradayız. Yapay zeka destekli çözümler, etkileyici dijital pazarlama stratejileri, profesyonel post prodüksiyon ve marka kimliği hizmetlerimizle sizinleyiz.
           </p>
-          <p className="menu_discription">
-            VMIX, canlı sırasında tekrarlar oluşturmak için anında bir cevap özelliği içerir.
-          </p>
+
         </div>
 
         <div className="menu__content mobile_menu_nav">
@@ -129,8 +126,8 @@ export default function MobileMenu() {
                 <Phone />
               </div>
               <div className="d-flex flex-column">
-                <a href="tel:+88011223344">+90 123 456 7890</a>
-                <a href="tel:+88011223344">+90 123 456 7890</a>
+                <a href="tel:+88011223344">+90 552 474 8188</a>
+                <a href="tel:+88011223344">+90 507 166 0967</a>
               </div>
             </li>
             <li>

@@ -1,21 +1,49 @@
 // Hero Oner
 export const heroOneData = [
   {
-    title: "Dijital Hizmet Ajansı Harpy Creative",
-    description: "Dijital yaratıcı ajans hizmetleri için çözümler sunuyoruz",
+    title: "Harpy Creative - Dijital Dünyada Fark Yaratın",
+    description: "Dijital Pazarlama | Yapay Zeka | Post-Production | Marka Kurgusu",
     btnText: "BAŞLAYIN",
+    image: "https://images5.alphacoders.com/619/thumbbig-619654.webp",
   },
   {
-    title: "Yeni İş Fikirleri Edinin",
-    description: "Mauris ac volutpat velit. Curabitur laoreet hendrerit varius.",
+    title: "Yapay Zeka Destekli Yaratıcı Çözümler",
+    description: "Yaratıcılıkla Teknolojiyi Buluşturan Ajans",
     btnText: "BAŞLAYIN",
+    image: "https://images5.alphacoders.com/619/thumbbig-619654.webp",
   },
   {
-    title: "Dijital Yaratıcı Ajans Hizmeti",
-    description: "Mauris ac volutpat velit. Curabitur laoreet hendrerit varius.",
+    title: "Markanızı Geleceğe Taşıyoruz",
+    description: "Markanıza Özel Stratejik Çözümler",
     btnText: "BAŞLAYIN",
+    image: "https://images5.alphacoders.com/619/thumbbig-619654.webp",
+  },
+  {
+    title: "Strateji, Tasarım ve Teknolojiyi Buluşturuyoruz",
+    description: "İçerik Üretiminden Performans Pazarlamaya Kadar 360° Çözümler",
+    btnText: "BAŞLAYIN",
+    image: "https://images5.alphacoders.com/619/thumbbig-619654.webp",
+  },
+  {
+    title: "Dijital Dünyada Güçlü Bir İz Bırakın",
+    description: "Yapay Zeka Destekli Veri Analizi ile Daha Akıllı Kararlar",
+    btnText: "BAŞLAYIN",
+    image: "https://images5.alphacoders.com/619/thumbbig-619654.webp",
+  },
+  {
+    title: "Harpy Creative - Dijital Dünyada Fark Yaratın",
+    description: "Görsel ve İşitsel Prodüksiyon ile Etkileyici Hikayeler",
+    btnText: "BAŞLAYIN",
+    image: "https://images5.alphacoders.com/619/thumbbig-619654.webp",
+  },
+  {
+    title: "Dijital Çağ İçin Yenilikçi Çözümler",
+    description: "Markanızın Dijital Yolculuğunu Güçlendiriyoruz",
+    btnText: "BAŞLAYIN",
+    image: "https://images5.alphacoders.com/619/thumbbig-619654.webp",
   },
 ];
+
 
 
 // Hero Two

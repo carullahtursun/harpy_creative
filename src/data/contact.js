@@ -5,7 +5,7 @@ export default {
     {
       title: "Telefon",
       description: "Birlikte çalışmakla ilgileniyoruz. Bize Ulaşın.",
-      infoOne: "+90 555 555 55 55",
+      infoOne: "+90 552 474 8188",
       infoTwo: "",
     },
     {
@@ -39,6 +39,6 @@ export default {
   cta: {
     image: SidebarBg,
     title: "Herhangi bir sorgunun ücretsiz hissettirdiğini bize ulaşın",
-    phone: "+90 555 555 55 55",
+    phone: "+90 552 474 8188",
   },
 };

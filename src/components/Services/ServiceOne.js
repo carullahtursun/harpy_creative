@@ -60,10 +60,8 @@ export default function ServiceOne({ sectionTitle, subHeading }) {
                 <Image src={item.icon} alt="strategy_plan" />
                 <div className="content">
                   <h4 className="title">
-                    <Link href="service" className="position-relative">
                       {item.title}
                       <ArrowUpRight />
-                    </Link>
                   </h4>
                   <p className="vm_para">{item.description}</p>
                   <ul className="list p-0">

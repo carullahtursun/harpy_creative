@@ -6,34 +6,34 @@ import serviceOneSeoOptizationIcon from "@/../public/assets/images/services/seo_
 
 export const serviceOneData = {
   brandIcon: serviceOneBrandIcon,
-  subHeading: "Neden Bizi Seçmelisiniz",
-  heading: "Sizin için yeni bir dijital çalışma sistemimiz var",
+  subHeading: "Hizmetlerimiz",
+  heading: "Hizmetlerimiz",
   items: [
     {
       icon: serviceOneStrategyIcon,
-      title: "Strateji Planı",
-      description: "Stratejik bir plan oluşturmak kritik bir süreçtir.",
-      features: ["Marka Stratejisi", "Marka Tasarımı"],
+      title: "Dijital Pazarlama",
+      description: "Dijital dünyada fark edilmek ve hedef kitlenize ulaşmak için yenilikçi pazarlama stratejileri geliştiriyoruz.",
+      features: ["Sosyal Medya Yönetimi", "Performans Pazarlama","SEO & İçerik Pazarlaması"],
     },
     {
       icon: serviceOneEmailMarketingIcon,
-      title: "E-posta Pazarlama",
+      title: "Yapay Zeka Çözümleri",
       description:
-          "E-posta pazarlama, işletmelerin müşterileriyle bağlantı kurması için güçlü bir araçtır.",
-      features: ["E-posta Pazarlama Ekle", "Web Tasarımı"],
+          "Harpy Creative olarak yapay zeka teknolojilerini kullanarak daha akıllı ve etkili pazarlama stratejileri geliştiriyoruz.",
+      features: ["AI Tabanlı İçerik Üretimi", "Chatbot ve Müşteri Deneyimi Çözümleri","Veri Analizi & Trend Tahmini"],
     },
     {
       icon: serviceOneContentMarketingIcon,
-      title: "İçerik Pazarlama",
+      title: "Post-Production Hizmetleri",
       description:
-          "İçerik pazarlama, değerli ve ilgi çekici içerikler oluşturarak hedef kitlenize ulaşmayı amaçlayan stratejik bir yaklaşımdır.",
-      features: ["İçerik Yayılımı", "Aylık Destek"],
+          "Markanız için güçlü ve etkileyici görsel içerikler üretiyoruz.",
+      features: ["Video Prodüksiyon", "Kurgu ve Montaj","Animasyon ve Görsel Efektler"],
     },
     {
       icon: serviceOneSeoOptizationIcon,
-      title: "SEO Optimizasyonu",
-      description: "Google Keyword Planner gibi araçları kullanarak keşif yapın.",
-      features: ["Google SEO", "Çevrimiçi Optimizasyon"],
+      title: "Marka Kurgusu",
+      description: "Markanızı en iyi şekilde konumlandırmak için stratejik planlamalar yapıyoruz.",
+      features: ["Marka Kimliği ve Stratejisi", "İçerik ve Hikaye Anlatımı","Deneyim Tasarım"],
     },
   ],
 };

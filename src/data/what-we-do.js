@@ -2,28 +2,34 @@ import imageOne from "@/../public/assets/images/what_we_do/we_do_bg.webp";
 import imageTwo from "@/../public/assets/images/what_we_do/we_do_bg_02.webp";
 
 export default {
-  heading: "We Provide best services for your business",
-  subHeading: "What Do We Do",
+
+  subHeading: "Neden Harpy Creative?",
   description:
-    "An individual who operates or starts a business with the same old business idea. An entrepreneur.",
+    "Yaratıcılığı teknolojiyle buluşturarak, markanızı dijital dünyada fark edilir ve unutulmaz kılıyoruz. ",
   skills: [
     {
       leading: "01",
-      title: "Experience & Expertise",
+      title: "Yenilikçi Yaklaşım",
       details:
-        "Nulla semper dolor erat, eu ullamcorper est iaculis nec. Donec ornare velit ut justo maximus, quis feugiat nibh viverra.",
+        "Teknoloji ve yaratıcılığı birleştirerek, markanız için özgün çözümler sunuyoruz.",
     },
     {
       leading: "02",
-      title: "Trust and Reliability Gained",
+      title: "Kişiselleştirilmiş Stratejiler",
       details:
-        "Ullamcorper est iaculis nec. Donec ornare velit ut justo maximus, quis feugiat nibh viverra. Nunc vel ultricies magna, eu volutpat dui.",
+        "Her markaya özel, hedef odaklı stratejiler geliştiriyoruz.",
     },
     {
       leading: "03",
-      title: "Powerful Terminal Lines",
+      title: "Profesyonel Ekip",
       details:
-        "Dolor erat, eu ullamcorper est iaculis nec. Donec ornare velit ut justo maximus, quis feugiat nibh viverra. Nunc vel ultricies magna.",
+        "Sektörün en yetenekli ve deneyimli profesyonelleriyle çalışıyoruz.",
+    },
+    {
+      leading: "04",
+      title: "Sonuç Odaklı",
+      details:
+          "Markanızın başarısı için etkili ve ölçülebilir çözümler sunuyoruz.",
     },
   ],
   imageOne: imageOne,

@@ -10,7 +10,7 @@ export default {
   descriptionOne: "Los Angeles, California",
   descriptionTwo: "Angeles 90024.",
   email: "harpycreative@gmail.com",
-  phone: "+90 123 456 7890",
+  phone: "+90 552 474 8188",
   topLinksTitle: "Hızlı Bağlantılar",
   footerBottomTitle: "Aklınızda herhangi bir proje var mı? İletişim kurun!",
   copyRightText: "Harpy Creative © 2025 ",

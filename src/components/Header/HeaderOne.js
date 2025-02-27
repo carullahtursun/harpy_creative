@@ -137,7 +137,7 @@ export default function HeaderOne() {
                     className="img-fluid"
                   />
                   <p className="call__me m-0 ms-1">Bizi Arayın:</p>
-                  <p className="call__number m-0">+(90) 505 555 5555</p>
+                  <p className="call__number m-0">+(90) 552 474 8188</p>
                 </div>
               </div>
 

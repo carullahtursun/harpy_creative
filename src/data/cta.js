@@ -1,4 +1,4 @@
 export default {
-  heading: "There Is Something Else For You.",
-  btnText: "CONTACT US",
+  heading: "Sana yardım etmek için buradayız",
+  btnText: "BİZE ULAŞIN",
 };

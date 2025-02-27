@@ -46,8 +46,8 @@ export const portfolioOneData = {
 
 // Portfolio Two
 export const portfolioTwoData = {
-  subHeading: "En İyi İş",
-  heading: "Parlak yeni bir dijital çalışma vitrimiz var",
+  subHeading: "Çalışmalarımız | Yaratıcılığın ve Teknolojinin Buluştuğu Projeler",
+  heading: "Dijital dünyadaki en yeni ve en etkileyici işlerimizi keşfedin!",
   slides: [
     [
       portfolioOneImg,

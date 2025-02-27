@@ -7,7 +7,7 @@ import data from "@/data/what-we-do";
 
 export default function WhatWeDo({ defaultOne }) {
   return (
-    <section className="what_we_do pt_150">
+    <section className="what_we_do pt_50">
       <div
         className={`${
           defaultOne ? "container container_lg_fluid" : "container"
