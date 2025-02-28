@@ -45,8 +45,8 @@ export default function RootLayout({children}) {
                 <link rel="preconnect" href="https://fonts.gstatic.com"/>
                 <link rel="stylesheet"
                       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"/>
-                <link rel="apple-touch-icon" sizes="180x180" href="../../public/assets/images/favicon.ico"/>
-                <link rel="shortcut icon" href="./favicon.ico"/>
+                <link rel="apple-touch-icon" sizes="180x180" href="./harpy.ico"/>
+                <link rel="shortcut icon" href="./harpy.ico"/>
                 <meta name="msapplication-TileColor" content="#da532c"/>
                 <meta name="theme-color" content="#ffffff"/>
                 <meta name="twitter:card" content="summary"/>
