@@ -51,11 +51,22 @@ const desktopMenu = [
     href: "/",
     subMenu: [],
   },
+  { label: "Portföy",
+    href: "portfolio",
+    subMenu: [],
+
+  },
   {
     label: "Hakkımızda",
     href: "about",
     subMenu: [],
   },
+  {
+    label: "İletişim",
+    href: "contact",
+    subMenu: [],
+  },
+
   /* {
     label: "Pages",
     href: "#",
@@ -77,11 +88,7 @@ const desktopMenu = [
       { label: "Blog Details", href: "blog-details" },
     ],
   }, */
-  {
-    label: "İletişim",
-    href: "contact",
-    subMenu: [],
-  },
+
 ];
 
 export { menuItems, desktopMenu };

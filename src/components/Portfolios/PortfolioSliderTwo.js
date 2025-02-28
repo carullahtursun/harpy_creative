@@ -75,13 +75,13 @@ export default function PortfolioSliderTwo() {
                 ))}
               </div>
             </SwiperSlide>
-
-          <div className="slider_pagination slider_pagination_bottom d-flex align-items-center position-absolute">
-            <button className="slide_btn slide_btn_prev slide_btn_prev-black position-relative"></button>
-            <div className="slider_pagination__item slider_pagination__item-black position-relative"></div>
-            <button className="slide_btn slide_btn_next slide_btn_next-black position-relative"></button>
-          </div>
         </Swiper>
+        <div className="link_widget w_content position-relative mx-auto mt_100 pb_50">
+          <Link href="portfolio" className="link">
+            Daha Fazla Göster
+          </Link>
+          <span></span>
+        </div>
       </div>
     </div>
   );

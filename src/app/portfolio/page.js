@@ -1,8 +1,11 @@
+"use client";
 import BreadCrumb from "@/components/Common/BreadCrumb";
 import HeaderOne from "@/components/Header/HeaderOne";
 import VimixLayout from "@/components/Layout/VimixLayout";
 import dynamic from "next/dynamic";
 import Link from "next/link";
+import {useEffect, useState} from "react";
+import {getPortfolios} from "@/config/portfolioService";
 
 const PortfolioWithFilter = dynamic(
   () => import("@/components/Portfolios/PortfolioWithFilter"),
@@ -10,22 +13,38 @@ const PortfolioWithFilter = dynamic(
 );
 
 export default function Portfolio() {
-  return (
-    <VimixLayout>
-      <HeaderOne />
-      <BreadCrumb
-        pageTitle="Portfolio Page"
-        activePage="Portfolio"
-        breadCrumbBg="assets/images/breadcrumb/portfolio.webp"
-      />
-      <PortfolioWithFilter />
 
-      <div className="link_widget w_content position-relative mx-auto mt_100 pb_100">
-        <Link href="portfolio" className="link">
-          Load More
-        </Link>
-        <span></span>
-      </div>
-    </VimixLayout>
+    //get portfolio data
+    const [portfolios, setPortfolios] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            setIsLoading(true);
+            const data = await getPortfolios();
+            setPortfolios(data);
+            setIsLoading(false);
+        };
+        fetchData();
+    }, []);
+
+    return (
+            isLoading ? (
+                <div className="d-flex justify-content-center align-items-center" style={{height: "100vh"}}>
+                    <div className="spinner-border text-danger" role="status">
+                        <span className="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            ) : (
+                <VimixLayout>
+                    <HeaderOne />
+                    <BreadCrumb
+                        pageTitle="Portfolio Page"
+                        activePage="Portfolio"
+                        breadCrumbBg="assets/images/breadcrumb/portfolio.webp"
+                    />
+                    <PortfolioWithFilter portfolios={portfolios}/>
+                </VimixLayout>
+            )
   );
 }
