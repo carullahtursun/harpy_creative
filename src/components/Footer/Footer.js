@@ -24,8 +24,9 @@ export default function     Footer() {
               <div className="col-sm-4 col-md-6 col-lg-4">
                 <div className="footer_logo">
                   <Link href="/" className="d-inline-block h-100">
-                    <Image src={data.logo} alt="logo" className="logo" />
                     <Image
+                        width={150}
+                        height={150}
                       src={data.mainLogo}
                       alt="logo"
                       className="main-logo-img logo"
