@@ -1,5 +1,5 @@
 import FooterLogo from "@/../public/assets/images/logo/footer_logo.svg";
-import FooterLogoMain from "@/../public/assets/images/logo/footer-main-logo.png";
+import FooterLogoMain from "@/../public/assets/images/logo/Icon_Blue_01.svg";
 import SubmitArrow from "@/../public/assets/images/icons/download_icon.svg";
 
 export default {

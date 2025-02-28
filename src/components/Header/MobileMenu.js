@@ -16,7 +16,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
-import logoWhite from "@/../public/assets/images/logo/logo_white.svg";
+import logoWhite from "@/../public/assets/images/logo/Logo_Horizon_Creative_white.svg";
 
 export default function MobileMenu() {
   const {

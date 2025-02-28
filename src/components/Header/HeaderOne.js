@@ -8,7 +8,7 @@ import MobileMenu from "./MobileMenu";
 import { useThemeContext } from "@/context/ThemeContext";
 import { desktopMenu } from "@/data/header";
 
-import logoWhite from "@/../public/assets/images/logo/logo_white.svg";
+import logoWhite from "@/../public/assets/images/logo/Logo_Horizon_Creative_white.svg";
 import logoBlack from "@/../public/assets/images/logo/logo_black.svg";
 import phoneVolumeRed from "@/../public/assets/images/icons/phone_volume_red.svg";
 import menuWhite from "@/../public/assets/images/icons/menu_white.svg";
