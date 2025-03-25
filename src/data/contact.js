@@ -1,4 +1,4 @@
-import SidebarBg from "@/../public/assets/images/about_us/sidebar.svg";
+import SidebarBg from "@/../public/assets/images/about_us/iletisim-footer.png";
 
 export default {
   cards: [
@@ -38,7 +38,7 @@ export default {
   },
   cta: {
     image: SidebarBg,
-    title: "Herhangi bir sorgunun ücretsiz hissettirdiğini bize ulaşın",
+    title: "",
     phone: "+90 552 474 8188",
   },
 };

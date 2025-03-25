@@ -15,7 +15,7 @@ const BreadCrumb = ({ pageTitle, activePage, breadCrumbBg }) => {
           <div className="col-lg-12">
             <div className="breadcrumb_content">
               <h2 className="page_title">{pageTitle}</h2>
-              <div className="page_list_border">
+              {/* <div className="page_list_border">
                 <span className="page_list_dot_1"></span>
                 <span className="page_list_dot_2"></span>
                 <span className="page_list_dot_3"></span>
@@ -26,7 +26,7 @@ const BreadCrumb = ({ pageTitle, activePage, breadCrumbBg }) => {
                   </li>
                   <li>{activePage}</li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

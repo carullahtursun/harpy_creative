@@ -39,9 +39,9 @@ export default function Portfolio() {
                 <VimixLayout>
                     <HeaderOne />
                     <BreadCrumb
-                        pageTitle="Portfolio Page"
-                        activePage="Portfolio"
-                        breadCrumbBg="assets/images/breadcrumb/portfolio.webp"
+                        pageTitle=""
+                        activePage=""
+                        breadCrumbBg="assets/images/breadcrumb/portfoy-banner.png"
                     />
                     <PortfolioWithFilter portfolios={portfolios}/>
                 </VimixLayout>

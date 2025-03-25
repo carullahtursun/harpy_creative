@@ -20,6 +20,8 @@ export default function ServiceOne({ sectionTitle, subHeading }) {
                 <Image
                   src={data.brandIcon}
                   alt="brand_icon"
+                  width={70}
+                  height={70}
                   className="wow animated fadeInUp"
                   data-wow-duration="1.5s"
                   data-wow-delay="0.3s"

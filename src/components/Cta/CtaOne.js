@@ -1,7 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import ArrowRightWhite from "@/../public/assets/images/icons/arrow_right_white.svg";
+import ArrowRightWhite from "@/../public/assets/images/breadcrumb/ana-sayfa-iletisim.png";
+import icon from "@/../public/assets/images/icons/phone_volume_red.svg";
+
 
 import cta from "@/data/cta";
 
@@ -14,25 +16,23 @@ export default function CtaOne({ spaceBottom }) {
     >
       <div className="container">
         <div className="cta__wrapper position-relative">
-          <p className="digital position-absolute end-0 bottom-0">digital</p>
-          <div className="content position-absolute top-50 start-50">
-            <h2 className="section_title cta_title fw-semibold">
-              {cta.heading}
-            </h2>
+         <Image src={ArrowRightWhite} alt="cta_bg" className="cta_bg" />
+         {/* <div className="content position-absolute top-50  start-50 pt_150 ">
+          
             <Link
               href="about"
               className="vm_btn fill_btn btn_black btn_12_27 d-inline-block"
             >
               <span>
                 <Image
-                  src={ArrowRightWhite}
+                  src={icon}
                   alt="arrow_right"
                   className="me-3"
                 />
                 {cta.btnText}
               </span>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

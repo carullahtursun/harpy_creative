@@ -1,4 +1,4 @@
-import serviceOneBrandIcon from "@/../public/assets/images/services/brand_icon.svg";
+import serviceOneBrandIcon from "@/../public/assets/images/logo/Icon_White_01.svg";
 import serviceOneStrategyIcon from "@/../public/assets/images/services/strategy_plan.svg";
 import serviceOneEmailMarketingIcon from "@/../public/assets/images/services/email_marketing.svg";
 import serviceOneContentMarketingIcon from "@/../public/assets/images/services/content_marketing.svg";

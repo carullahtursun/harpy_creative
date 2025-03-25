@@ -40,7 +40,7 @@ export default function HeroOne() {
                 <div className="col-12 col-md-9 col-lg-9">
                   <h1 className="title vm-animate-1">{hero.title}</h1>
                   <p className="subtitle vm-animate-2">{hero.description}</p>
-                  <Link
+                  {/* <Link
                     href="pricing"
                     className="vm_btn fill_btn btn_black btn_27_59 d-inline-block vm-animate-3"
                   >
@@ -52,7 +52,7 @@ export default function HeroOne() {
                       />
                       {hero.btnText}
                     </span>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>

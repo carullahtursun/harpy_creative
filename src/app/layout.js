@@ -26,8 +26,8 @@ const ysabeauOffice = Ysabeau_Office({
 });
 
 export const metadata = {
-    title: "Harpy Creative Agency",
-    description: "Harpy Creative is a digital agency that specializes in web design, web development, and digital marketing.",
+    title: "Harpy Creative",
+    description: "Harpy Creative 360° ajans hizmeti veren kreatif bir kuruluştur. Post Prodüksiyon ve Yapay Zeka alanlarında üstün hizmet vermektedir.",
 };
 
 export default function RootLayout({children}) {
@@ -45,8 +45,7 @@ export default function RootLayout({children}) {
                 <link rel="preconnect" href="https://fonts.gstatic.com"/>
                 <link rel="stylesheet"
                       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"/>
-                <link rel="apple-touch-icon" sizes="180x180" href="./harpy.ico"/>
-                <link rel="shortcut icon" href="./harpy.ico"/>
+               <link rel="icon" href="favicon.ico" sizes="any" />
                 <meta name="msapplication-TileColor" content="#da532c"/>
                 <meta name="theme-color" content="#ffffff"/>
                 <meta name="twitter:card" content="summary"/>

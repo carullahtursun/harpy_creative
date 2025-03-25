@@ -8,12 +8,12 @@ export default function Contact() {
   return (
     <VimixLayout>
       <BreadCrumb
-        pageTitle="İletişim"
-        activePage="İletişim"
-        breadCrumbBg="assets/images/breadcrumb/contact.webp"
+        pageTitle=""
+        activePage=""
+        breadCrumbBg="assets/images/breadcrumb/Harpy-İletisim.png"
       />
-      <FullWidthMap />
       <ContactInfoCard />
+      <FullWidthMap />
     </VimixLayout>
   );
 }

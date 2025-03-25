@@ -21,9 +21,9 @@ export default function About() {
   return (
     <VimixLayout>
       <BreadCrumb
-        pageTitle="Hakkımızda"
-        activePage="Hakkımızda"
-        breadCrumbBg="assets/images/breadcrumb/about.webp"
+        pageTitle=""
+        activePage=""
+        breadCrumbBg="assets/images/breadcrumb/harpy-banner.png"
       />
       <AboutMain />
       <PartnerScrolling />

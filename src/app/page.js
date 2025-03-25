@@ -20,9 +20,9 @@ export default function HomeOne() {
     <VimixLayout>
       <HeaderOne />
       <HeroOne />
-      <PartnerScrolling />
+   {/*    <PartnerScrolling /> */}
       <ServiceOne sectionTitle />
-      <CategoriesScrolling />
+     {/*  <CategoriesScrolling /> */}
       <PortfolioSliderTwo />
       <CtaOne />
     </VimixLayout>

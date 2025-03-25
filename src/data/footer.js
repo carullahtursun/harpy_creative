@@ -7,9 +7,9 @@ export default {
   mainLogo: FooterLogoMain,
   submitArrowImage: SubmitArrow,
   title: "İletişim",
-  descriptionOne: "Los Angeles, California",
-  descriptionTwo: "Angeles 90024.",
-  email: "harpycreative@gmail.com",
+  descriptionOne: "İstanbul, Türkiye 34394",
+  descriptionTwo: "",
+  email: "creativeharpy@gmail.com",
   phone: "+90 552 474 8188",
   topLinksTitle: "Hızlı Bağlantılar",
   footerBottomTitle: "Aklınızda herhangi bir proje var mı? İletişim kurun!",
@@ -17,17 +17,17 @@ export default {
   companyName: "Harpy Creative",
   links: [
     {
-      name: "hakkımızda",
-      href: "about",
-    },
-    {
       name: "Portföy",
       href: "portfolio",
     },
-   /* {
-      name: "Services",
-      href: "service",
-    },*/
+    {
+      name: "Hakkımızda",
+      href: "about",
+    },
+   {
+      name: "İletişim",
+      href: "contact",
+    },
    /* {
       name: "Team",
       href: "team",

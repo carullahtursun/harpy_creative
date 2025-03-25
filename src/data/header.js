@@ -1,6 +1,6 @@
 const menuItems = [
   {
-    label: "Home",
+    label: "Anasayfa",
     href: "/",
     subMenu: [],
   },
@@ -8,6 +8,11 @@ const menuItems = [
     label: "Hakkımızda",
     href: "about",
     subMenu: [],
+  },
+  { label: "Portföy",
+    href: "portfolio",
+    subMenu: [],
+
   },
 /*   {
     label: "Service",
@@ -52,18 +57,18 @@ const desktopMenu = [
     subMenu: [],
   },
   { label: "Portföy",
-    href: "portfolio",
+    href: "/portfolio",
     subMenu: [],
 
   },
   {
     label: "Hakkımızda",
-    href: "about",
+    href: "/about",
     subMenu: [],
   },
   {
     label: "İletişim",
-    href: "contact",
+    href: "/contact",
     subMenu: [],
   },
 

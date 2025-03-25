@@ -130,15 +130,15 @@ export default function HeaderOne() {
           <div className="col-6 col-lg-2 col-xl-4 p-0">
             <div className="header__right d-flex align-items-center justify-content-end">
               <div className="d-none d-xl-block flex-shrink-0 me-auto">
-                <div className="call d-flex align-items-center gap-2">
+                {/* <div className="call d-flex align-items-center gap-2">
                   <Image
                     src={phoneVolumeRed}
                     alt="phone"
                     className="img-fluid"
                   />
                   <p className="call__me m-0 ms-1">Bizi Arayın:</p>
-                  <p className="call__number m-0">+(90) 552 474 8188</p>
-                </div>
+                  <p className="call__number m-0">+(90) 507 166 0967</p>
+                </div> */}
               </div>
 
              {/* <div className="position-relative flex-shrink-0">

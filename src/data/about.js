@@ -32,7 +32,7 @@ import BottomRight from "@/../public/assets/images/about_us/btm_right.svg";
 import DotImage from "@/../public/assets/images/about_us/dot.svg";
 import LogoIcon from "@/../public/assets/images/logo/Icon_Blue_01.svg";
 import CircleTextBg from "@/../public/assets/images/about_us/circle_text_bg.svg";
-import MainImage from "@/../public/assets/images/about_us/about_us_03.webp";
+import MainImage from "@/../public/assets/images/about_us/Strateji Planı.png";
 
 export const aboutTwoData = {
   heading: "About For vmix Business Service agency",

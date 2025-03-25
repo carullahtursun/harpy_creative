@@ -135,9 +135,11 @@ export default function MobileMenu() {
                 <Mail />
               </div>
               <div className="d-flex flex-column">
-                <a href="harpycreative@gmail.com">harpycreative@gmail.com</a>
-                <a href="harpycreative@gmail.com">
-                  harpycreative@gmail.com
+                <a href="#">
+                  harpyemre@gmail.com
+                  </a>
+                <a href="#">
+                  imranharpy@gmail.com
                 </a>
               </div>
             </li>
@@ -147,26 +149,36 @@ export default function MobileMenu() {
         <div className="social_share">
           <p className="social_share__title">Bizi bul</p>
           <ul className="social_share__list d-flex align-items-center m-0 p-0">
-            <li className="facebook d-flex align-items-center justify-content-center">
+            {/* <li className="facebook d-flex align-items-center justify-content-center">
               <a href="#" className="social_share__list_link">
                 <Facebook />
               </a>
-            </li>
+            </li> */}
             <li className="instagram d-flex align-items-center justify-content-center">
-              <a href="#" className="social_share__list_link">
+              <a href="https://www.instagram.com/harpycreative?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+               className="social_share__list_link"
+                target="_blank"
+                rel="noopener noreferrer"
+               >
                 <Instagram />
               </a>
             </li>
-            <li className="linkedin d-flex align-items-center justify-content-center">
-              <a href="#" className="social_share__list_link">
+            {/* <li className="linkedin d-flex align-items-center justify-content-center">
+              <a href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social_share__list_link">
                 <Twitter />
               </a>
             </li>
             <li className="linkedin d-flex align-items-center justify-content-center">
-              <a href="#" className="social_share__list_link">
+              <a href="#" className="social_share__list_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >
                 <Linkedin />
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

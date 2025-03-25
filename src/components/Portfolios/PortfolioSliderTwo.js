@@ -41,9 +41,9 @@ export default function PortfolioSliderTwo() {
         <div className="row justify-content-center">
           <div className="col-12 col-sm-8 col-md-7 text-center">
             <p className="section_subtitle">{portfolio.subHeading}</p>
-            <h2 className="section_title text-center mb_50">
+            <h4 className="section_title text-center mb_50">
               {portfolio.heading}
-            </h2>
+            </h4>
           </div>
         </div>
         <Swiper

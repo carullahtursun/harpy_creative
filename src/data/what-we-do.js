@@ -1,5 +1,5 @@
 import imageOne from "@/../public/assets/images/what_we_do/we_do_bg.webp";
-import imageTwo from "@/../public/assets/images/what_we_do/we_do_bg_02.webp";
+import imageTwo from "@/../public/assets/images/what_we_do/iletisim.png";
 
 export default {
 
